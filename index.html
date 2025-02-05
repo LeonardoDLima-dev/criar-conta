@@ -15,7 +15,7 @@
     <main id="form_container">
         <div id="form_header">
             <h1 id="form_title">
-                Criar Conta
+                Criar conta
             </h1>
             <button class="btn-default">
                 <i class="fa-solid fa-right-to-bracket"></i>
@@ -26,22 +26,24 @@
             <div id="input_container">
                 <div class="input-box">
                     <label for="name" class="form-label">
-                        Primeiro Nome
+                        Primeiro nome
                     </label>
                     <div class="input-field">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Nome">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Fulano">
                         <i class="fa-regular fa-user"></i>
                     </div>
+                    <span class="error"></span>
                 </div>
 
                 <div class="input-box">
                     <label for="last_name" class="form-label">
-                        Último Nome
+                        Último nome
                     </label>
                     <div class="input-field">
-                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Sobrenome">
+                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="De Tal">
                         <i class="fa-regular fa-user"></i>
                     </div>
+                    <span class="error"></span>
                 </div>
 
                 <div class="input-box">
@@ -51,6 +53,7 @@
                     <div class="input-field">
                         <input type="date" name="birthdate" id="birthdate" class="form-control">
                     </div>
+                    <span class="error"></span>
                 </div>
 
                 <div class="input-box">
@@ -62,6 +65,7 @@
                             placeholder="exemplo@gmail.com">
                         <i class="fa-regular fa-envelope"></i>
                     </div>
+                    <span class="error"></span>
                 </div>
 
                 <div class="input-box">
@@ -72,6 +76,7 @@
                         <input type="password" name="password" id="password" class="form-control" placeholder="*******">
                         <i class="fa-regular fa-eye-slash password-icon"></i>
                     </div>
+                    <span class="error"></span>
                 </div>
 
                 <div class="input-box">
@@ -83,6 +88,7 @@
                             placeholder="*******">
                         <i class="fa-regular fa-eye-slash password-icon"></i>
                     </div>
+                    <span class="error"></span>
                 </div>
 
                 <div class="radio-container">
@@ -113,11 +119,11 @@
                         </div>
                     </div>
 
-
+                    <span class="error"></span>
                 </div>
             </div>
 
-            <button type="sumbit" class="btn-default">
+            <button type="submit" class="btn-default">
                 <i class="fa-solid fa-check"></i>
                 Criar conta
             </button>

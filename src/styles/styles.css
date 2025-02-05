@@ -136,11 +136,11 @@ input:-webkit-autofill {
 }
 
 #gender_inputs {
-   display: flex;
-   gap: 4px;
+    display: flex;
+    gap: 20px;
 }
 
-.radio-box{
+.radio-box {
     display: flex;
     gap: 4px;
     align-items: center;
@@ -150,7 +150,38 @@ input:-webkit-autofill {
     accent-color: #6366f1;
 }
 
-@media screen and (max-width: 500px){
+.error {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 4px;
+    max-width: 200px;
+}
+
+.input-box.invalid .form-label {
+    color: #dc2626;
+}
+
+.input-box.invalid .input-field {
+    border: 1px solid #dc2626;
+}
+
+.input-box.valid .form-label {
+    color: #22c55e;
+}
+
+.input-box.valid .input-field {
+    border: 1px solid #22c55e;
+}
+
+.radio-container.invalid .form-label:first-child {
+    color: #dc2626;
+}
+
+.radio-container.valid .form-label:first-child {
+    color: #22c55e;
+}
+
+@media screen and (max-width: 500px) {
     #form_container {
         width: 100%;
         min-height: 100vh;
@@ -164,6 +195,6 @@ input:-webkit-autofill {
     }
 
     .form-control[type="date"] {
-        background-color: #ffff;
+        background-color: #fff;
     }
 }
